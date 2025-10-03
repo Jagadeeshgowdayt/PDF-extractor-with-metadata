@@ -3,9 +3,9 @@ Copyright (c) 2025 Jagadeeshgowdayt
 This file is part of PDF-extractor-with-metadata, released under the MIT License.
 See LICENSE in the project root for details.
 """
-"""Scraper for univault-portal.vercel.app
+"""Scraper for a university resource portal
 
-Queries the public search API, downloads approved PDF resources, extracts metadata,
+Queries a public search API, downloads approved PDF resources, extracts metadata,
 converts pages to JPEGs, and writes a results.jsonl with paths and metadata.
 """
 import os
@@ -21,7 +21,7 @@ from utils import build_filename
 from pdf_tools import download_pdf, extract_pdf_metadata, pdf_to_jpegs
 
 
-BASE_URL = "https://univault-portal.vercel.app"
+BASE_URL = "<YOUR_RESOURCE_PORTAL_BASE_URL>"  # Set your resource portal base URL here
 SEARCH_API = BASE_URL + "/api/search"
 DOWNLOAD_API = BASE_URL + "/api/resource/download"
 OUTPUT_DIR = Path(__file__).resolve().parent.parent / "output"

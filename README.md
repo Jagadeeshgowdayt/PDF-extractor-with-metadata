@@ -40,7 +40,7 @@ python scripts\scrape_univault.py
 
 Next steps
 ----------
-- Implement API discovery for https://univault-portal.vercel.app/search and iterate results.
+  
 - Add command-line options for max-results, image quality, lowercase filenames, and page limit.
 - Add retries, rate limiting, and logging.
 # PDF-extractor-with-metadata
